@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import lombok.ToString;
+
 import javax.persistence.*;
 
 @Entity(name = "Student")
@@ -12,6 +14,7 @@ import javax.persistence.*;
                 )
         }
 )
+@ToString
 public class Student {
 
     @Id
@@ -111,14 +114,4 @@ public class Student {
         this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", firstname='" + firstname + '\'' +
-                ", lastname='" + lastname + '\'' +
-                ", email='" + email + '\'' +
-                ", age=" + age +
-                '}';
-    }
 }

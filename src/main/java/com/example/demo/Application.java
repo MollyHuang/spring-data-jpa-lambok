@@ -22,6 +22,7 @@ public class Application {
                     21
             );
             studentRepository.save(maria);
+            System.out.println(maria);
         };
     }
 
