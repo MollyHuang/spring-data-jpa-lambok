@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.*;
@@ -15,6 +17,8 @@ import javax.persistence.*;
         }
 )
 @ToString
+@AllArgsConstructor
+@NoArgsConstructor
 public class Student {
 
     @Id
@@ -60,19 +64,6 @@ public class Student {
             nullable = false
     )
     private Integer age;
-
-    public Student(String firstname,
-                   String lastname,
-                   String email,
-                   Integer age) {
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.email = email;
-        this.age = age;
-    }
-
-    public Student() {
-    }
 
     public Long getId() {
         return id;
