@@ -10,7 +10,3 @@ In this course you learn everything there is to learn about Spring Data JPA allo
 - Connect to a real database and not in memory DB
 - How to map classes to tables
 - Hibernate Entity Life Cycle
-- Queries
-- Paging and Sorting
-- 1 to 1 Relationships
-- Transactions
