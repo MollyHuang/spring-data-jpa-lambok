@@ -58,19 +58,17 @@ public class Student {
     )
     private Integer age;
 
-    public Student() {
-    }
-
-    public Student(Long id,
-                   String firstname,
+    public Student(String firstname,
                    String lastname,
                    String email,
                    Integer age) {
-        this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
         this.age = age;
+    }
+
+    public Student() {
     }
 
     public Long getId() {
