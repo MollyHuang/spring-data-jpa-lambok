@@ -50,6 +50,9 @@ public class Student {
     )
     private Integer age;
 
+    public Student() {
+    }
+
     public Student(Long id,
                    String firstname,
                    String lastname,
